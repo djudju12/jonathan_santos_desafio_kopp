@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8be575a-638a-4813-a8ff-9ea192c5f431" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/repository/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/service/implementation/ItemServiceImpl.java" afterDir="false" />
+    <list default="true" id="b8be575a-638a-4813-a8ff-9ea192c5f431" name="Changes" comment="feature: service dos itens">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImplTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/jonathan/desafio/service/implementation/ItemServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2WwrPh6KhnabtLsm0uludOD3V6A" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,47 +38,118 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jonathan.desafio.repository.implementation" />
       <recent name="com.jonathan.desafio.service.implementation" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.Main" />
+  <component name="RunManager" selected="JUnit.ItemRepositoryImplTest">
+    <configuration name="ItemRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-kopp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jonathan.desafio.*" />
+          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemRepositoryImplTest.findAll_EmptyRepository" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-kopp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findAll_EmptyRepository" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemRepositoryImplTest.findAll_Sucess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-kopp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findAll_Sucess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemRepositoryImplTest.save_ItemWithId_ReturnWithNewId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-kopp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
+      <option name="METHOD_NAME" value="save_ItemWithId_ReturnWithNewId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemRepositoryImplTest.save_ItemWithPriceNull_ReturnPriceZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-kopp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
+      <option name="METHOD_NAME" value="save_ItemWithPriceNull_ReturnPriceZero" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ItemRepositoryImplTest" />
+        <item itemvalue="JUnit.ItemRepositoryImplTest.findAll_EmptyRepository" />
+        <item itemvalue="JUnit.ItemRepositoryImplTest.findAll_Sucess" />
+        <item itemvalue="JUnit.ItemRepositoryImplTest.save_ItemWithId_ReturnWithNewId" />
+        <item itemvalue="JUnit.ItemRepositoryImplTest.save_ItemWithPriceNull_ReturnPriceZero" />
       </list>
     </recent_temporary>
   </component>
@@ -100,10 +162,55 @@
       <option name="presentableId" value="Default" />
       <updated>1697654462639</updated>
       <workItem from="1697654463999" duration="3882000" />
+      <workItem from="1697658709901" duration="1717000" />
     </task>
+    <task id="LOCAL-00001" summary="feature: repositorio dos itens">
+      <option name="closed" value="true" />
+      <created>1697658771663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658771663</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feature: modelo e repositorio dos itens">
+      <option name="closed" value="true" />
+      <created>1697658786246</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658786246</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feature: modelo e repositorio dos itens">
+      <option name="closed" value="true" />
+      <created>1697658817079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658817079</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feature: service dos itens">
+      <option name="closed" value="true" />
+      <created>1697658833208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697658833208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature: repositorio dos itens" />
+    <MESSAGE value="feature: modelo e repositorio dos itens" />
+    <MESSAGE value="feature: service dos itens" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: service dos itens" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/desafio_kopp$ItemRepositoryImplTest.ic" NAME="ItemRepositoryImplTest Coverage Results" MODIFIED="1697659938557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jonathan.desafio.repository.implementation.*</FILTER>
+    </SUITE>
   </component>
 </project>

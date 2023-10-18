@@ -5,7 +5,6 @@ import com.jonathan.desafio.repository.ItemRepository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class ItemRepositoryImpl implements ItemRepository {
 
@@ -22,32 +21,15 @@ public class ItemRepositoryImpl implements ItemRepository {
 
     @Override
     public Item save(Item item) {
+        if (item.getPrice() == null) {
+            item.setPrice(0.0);
+        }
+
         Item newItem = new Item(nextId, item.getPrice());
         itemsDatabase.add(newItem);
         nextId++;
 
         return newItem;
-    }
-
-    @Override
-    public void removeById(Long id) {
-        for (Item item : itemsDatabase) {
-            if (Objects.equals(item.getId(), id)) {
-                itemsDatabase.remove(item);
-                return;
-            }
-        }
-    }
-
-    @Override
-    public Boolean existsById(Long id) {
-        for (Item item : itemsDatabase) {
-            if (Objects.equals(item.getId(), id)) {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     @Override
