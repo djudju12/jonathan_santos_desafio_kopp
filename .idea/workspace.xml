@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8be575a-638a-4813-a8ff-9ea192c5f431" name="Changes" comment="refactor: removido alguns métodos não utilizados">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImplTest.java" afterDir="false" />
+    <list default="true" id="b8be575a-638a-4813-a8ff-9ea192c5f431" name="Changes" comment="refactor: removido alguns metodos não utilizados do ItemService">
       <change afterPath="$PROJECT_DIR$/src/test/java/com/jonathan/desafio/service/implementation/ItemServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jonathan/desafio/repository/implementation/ItemRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +58,19 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.jonathan.desafio.repository.implementation" />
       <recent name="com.jonathan.desafio.service.implementation" />
+      <recent name="com.jonathan.desafio.repository.implementation" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ItemRepositoryImplTest">
+  <component name="RunManager" selected="JUnit.All in desafio-kopp">
+    <configuration name="All in desafio-kopp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-kopp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItemRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-kopp" />
       <extension name="coverage">
@@ -109,33 +118,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemRepositoryImplTest.save_ItemWithId_ReturnWithNewId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemServiceImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-kopp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
+          <option name="PATTERN" value="com.jonathan.desafio.service.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
-      <option name="METHOD_NAME" value="save_ItemWithId_ReturnWithNewId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ItemRepositoryImplTest.save_ItemWithPriceNull_ReturnPriceZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafio-kopp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jonathan.desafio.repository.implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jonathan.desafio.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.repository.implementation.ItemRepositoryImplTest" />
-      <option name="METHOD_NAME" value="save_ItemWithPriceNull_ReturnPriceZero" />
+      <option name="PACKAGE_NAME" value="com.jonathan.desafio.service.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.jonathan.desafio.service.implementation.ItemServiceImplTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in desafio-kopp" />
+        <item itemvalue="JUnit.ItemServiceImplTest.save" />
         <item itemvalue="JUnit.ItemRepositoryImplTest" />
         <item itemvalue="JUnit.ItemRepositoryImplTest.findAll_EmptyRepository" />
         <item itemvalue="JUnit.ItemRepositoryImplTest.findAll_Sucess" />
-        <item itemvalue="JUnit.ItemRepositoryImplTest.save_ItemWithId_ReturnWithNewId" />
-        <item itemvalue="JUnit.ItemRepositoryImplTest.save_ItemWithPriceNull_ReturnPriceZero" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697654462639</updated>
       <workItem from="1697654463999" duration="3882000" />
-      <workItem from="1697658709901" duration="2027000" />
+      <workItem from="1697658709901" duration="2472000" />
     </task>
     <task id="LOCAL-00001" summary="feature: repositorio dos itens">
       <option name="closed" value="true" />
@@ -202,7 +195,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697660719893</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test: repositorio dos itens">
+      <option name="closed" value="true" />
+      <created>1697660772129</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697660772129</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: removido alguns metodos não utilizados do ItemService">
+      <option name="closed" value="true" />
+      <created>1697660867080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697660867080</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,11 +222,14 @@
     <MESSAGE value="feature: modelo e repositorio dos itens" />
     <MESSAGE value="feature: service dos itens" />
     <MESSAGE value="refactor: removido alguns métodos não utilizados" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: removido alguns métodos não utilizados" />
+    <MESSAGE value="test: repositorio dos itens" />
+    <MESSAGE value="refactor: removido alguns metodos não utilizados do ItemService" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: removido alguns metodos não utilizados do ItemService" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/desafio_kopp$ItemRepositoryImplTest.ic" NAME="ItemRepositoryImplTest Coverage Results" MODIFIED="1697660443742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.jonathan.desafio.repository.implementation.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/desafio_kopp$All_in_desafio_kopp.ic" NAME="All in desafio-kopp Coverage Results" MODIFIED="1697661137783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

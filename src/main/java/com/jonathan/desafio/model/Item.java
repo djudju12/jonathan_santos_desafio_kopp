@@ -1,5 +1,7 @@
 package com.jonathan.desafio.model;
 
+import java.util.Objects;
+
 public class Item {
     private final Long id;
     private Double price;
@@ -28,6 +30,22 @@ public class Item {
 
     @Override
     public String toString() {
-        return id + " cujo valor é R$ " + price;
+        return "Item{" +
+                "id=" + id +
+                ", price=" + price +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Item item = (Item) o;
+        return Objects.equals(id, item.id) && Objects.equals(price, item.price);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, price);
     }
 }
