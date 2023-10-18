@@ -20,15 +20,6 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public void removeById(Long id) {
-        if (!itemRepository.existsById(id)) {
-            throw new RuntimeException("Item " + id + " não encontrado");
-        }
-
-        itemRepository.removeById(id);
-    }
-
-    @Override
     public String makeReport() {
         List<Item> items = itemRepository.findAll();
         if (items.isEmpty()) {
