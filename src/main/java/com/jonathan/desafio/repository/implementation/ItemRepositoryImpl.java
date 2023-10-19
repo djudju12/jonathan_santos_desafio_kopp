@@ -11,10 +11,6 @@ public class ItemRepositoryImpl implements ItemRepository {
     private final List<Item> itemsDatabase;
     private Long nextId = 1L;
 
-    public ItemRepositoryImpl(List<Item> itemsDatabase) {
-        this.itemsDatabase = itemsDatabase;
-    }
-
     public ItemRepositoryImpl() {
         this.itemsDatabase = new ArrayList<>();
     }
