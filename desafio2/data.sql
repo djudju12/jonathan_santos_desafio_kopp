@@ -46,5 +46,5 @@ SELECT r.id                                      AS remessa_id,
        COUNT(*) FILTER (WHERE i.valida IS FALSE) AS infracoes_invalidas
 FROM remessa r
          JOIN infracao i ON r.id = i.remessa_id
-GROUP BY r.id
+GROUP BY r.id, r.situacao
 ORDER BY r.situacao;
