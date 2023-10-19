@@ -20,24 +20,37 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
+    public void dumpItems(List<Double> prices) {
+        prices.stream()
+                .map(Item::new)
+                .forEach(itemRepository::save);
+    }
+
+    @Override
     public String makeReport() {
         List<Item> items = itemRepository.findAll();
         if (items.isEmpty()) {
             return "Nenhum item cadastrado";
         }
 
-        Double total = 0.0;
         StringBuilder report = new StringBuilder();
         report.append("Remessa gerada: ");
 
+        Double total = 0.0;
         for (Item item : items) {
-            report.append(item).append(", ");
+            report.append(item.getId())
+                    .append(" cujo valor é R$ ")
+                    .append(String.format("%.2f", item.getPrice()))
+                    .append(", ");
+
             total += item.getPrice();
         }
 
         // Remove the last "," from the report
-        report.delete(report.length()-2, report.length());
-        report.append(". Total = ").append(total).append(".");
+        report.delete(report.length() - 2, report.length());
+
+        report.append(". Total = R$ ")
+                .append(String.format("%.2f.", total));
 
         return report.toString();
     }
