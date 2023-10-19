@@ -32,4 +32,10 @@ public class ItemRepositoryImpl implements ItemRepository {
     public List<Item> findAll() {
         return itemsDatabase;
     }
+
+    @Override
+    public void clearDatabase() {
+        itemsDatabase.clear();
+        nextId = 1L;
+    }
 }

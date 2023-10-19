@@ -27,6 +27,11 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
+    public void clear() {
+        itemRepository.clearDatabase();
+    }
+
+    @Override
     public String makeReport() {
         List<Item> items = itemRepository.findAll();
         if (items.isEmpty()) {

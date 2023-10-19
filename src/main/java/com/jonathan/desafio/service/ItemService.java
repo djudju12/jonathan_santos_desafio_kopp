@@ -7,5 +7,6 @@ import java.util.List;
 public interface ItemService {
     Item save(Item item);
     List<Item> saveAll(List<Item> items);
+    void clear();
     String makeReport();
 }

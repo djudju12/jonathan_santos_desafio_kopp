@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface ItemRepository {
     Item save(Item item);
+    void clearDatabase();
     List<Item> findAll();
 }
