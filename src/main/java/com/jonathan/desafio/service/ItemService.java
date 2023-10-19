@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ItemService {
     Item save(Item item);
-    void dumpItems(List<Double> prices);
+    List<Item> saveAll(List<Item> items);
     String makeReport();
 }

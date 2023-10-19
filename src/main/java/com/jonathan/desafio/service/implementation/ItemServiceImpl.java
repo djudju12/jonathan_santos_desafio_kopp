@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ItemServiceImpl implements ItemService {
 
-    ItemRepository itemRepository;
+    private final ItemRepository itemRepository;
 
     public ItemServiceImpl(ItemRepository itemRepository) {
         this.itemRepository = itemRepository;
@@ -20,10 +20,10 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public void dumpItems(List<Double> prices) {
-        prices.stream()
-                .map(Item::new)
-                .forEach(itemRepository::save);
+    public List<Item> saveAll(List<Item> items) {
+        return items.stream()
+                    .map(itemRepository::save)
+                    .toList();
     }
 
     @Override
@@ -54,5 +54,4 @@ public class ItemServiceImpl implements ItemService {
 
         return report.toString();
     }
-
 }
