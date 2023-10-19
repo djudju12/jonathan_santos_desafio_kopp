@@ -22,7 +22,6 @@ class ItemRepositoryImplTest {
     @Test
     void save_Success() {
         // given
-
         Item item = new Item(ITEM_PRICE);
 
         // when
@@ -60,6 +59,7 @@ class ItemRepositoryImplTest {
         // then
         assertNotNull(newItem);
         assertEquals(FIRST_ITEM_ID, newItem.getId());
+        assertNotEquals(item, newItem);
     }
 
     @Test
@@ -91,6 +91,23 @@ class ItemRepositoryImplTest {
         /* empty repository */
 
         // when
+        var items = itemRepository.findAll();
+
+        // then
+        assertNotNull(items);
+        assertTrue(items.isEmpty());
+    }
+
+    @Test
+    void clear() {
+        // given
+        final int n = 3;
+        for (int i = 0; i < n; i++) {
+            itemRepository.save(new Item(ITEM_PRICE));
+        }
+
+        // when
+        itemRepository.clearDatabase();
         var items = itemRepository.findAll();
 
         // then
