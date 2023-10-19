@@ -63,14 +63,6 @@ class ItemRepositoryImplTest {
     }
 
     @Test
-    void removeById() {
-    }
-
-    @Test
-    void existsById() {
-    }
-
-    @Test
     void findAll_Sucess() {
         // given
         final int n = 3;
