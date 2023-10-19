@@ -10,7 +10,6 @@ public class Main {
     public static void main(String[] args) {
         ItemRepository itemRepository = new ItemRepositoryImpl();
         ItemService itemService = new ItemServiceImpl(itemRepository);
-
         itemService.save(new Item( 88.0));
         itemService.save(new Item( 130.0));
         itemService.save(new Item( 54.9));
